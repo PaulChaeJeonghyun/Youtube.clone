@@ -80,7 +80,7 @@ header {
    max-width: 1000px;
 }
 
-.info {
+body> .info {
    padding: var(--padding);
 }
 
@@ -179,3 +179,61 @@ header {
    color: var(--red-color);
 }
 
+/* upnext */
+.upNext {
+   padding: var(--padding);
+}
+
+.upNext > .title {
+   font-size: var(--font-medium);
+   color: var(--grey-dark-color);
+   margin-bottom: calc(var(--padding) / 2);
+}
+
+.upNext .item {
+   display: flex;
+   margin-top: var(--padding);
+}
+
+.upNext .item .img {
+   flex: 1 1 40%;
+   margin-right: var(--padding);
+}
+
+.upNext .item .img img {
+   width: 100%;
+}
+
+.upNext .item .info {
+   flex: 1 1 50%;
+}
+
+.upNext .item .moreBtn {
+   flex: 1 1 10%
+}
+
+.upNext .item .info {
+   display: flex;
+   flex-direction: column;
+}
+
+.upNext .item .info .title {
+   font-size: var(--font-medium);
+}
+
+.upNext .item .info .name,
+.upNext .item .info .views {
+   font-size: var(--font-small);
+}
+
+.infoAndUpNext {
+   display: flex;
+   flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+   .infoAndUpNext {
+      flex-direction: row;
+      margin: var(--padding) 0;
+   }   
+}
